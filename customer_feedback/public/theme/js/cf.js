@@ -12,7 +12,7 @@ for(let pair of queryString.entries()) {
 
 
 
-document.addEventListener('submit', function (event) {
+    document.addEventListener('submit', function (event) {
 
     event.preventDefault();
 
@@ -22,6 +22,9 @@ document.addEventListener('submit', function (event) {
     }).then(function (response) {
         if (response.ok) {
 
+            // document.getElementById("responseHead").innerHTML = response.message;
+            // document.getElementById('responseBody').innerHTML = response.message;
+
             $(document).ready(function(){
                 $("#myModal").modal('show');
             });
@@ -30,7 +33,20 @@ document.addEventListener('submit', function (event) {
         }
         return Promise.reject(response);
     }).then(function (data) {
-        console.log(data);
+
+        if(data.message == "Success"){
+            document.getElementById('responseHead').innerHTML = "Success";
+            document.getElementById('responseBody').innerHTML = "We have received your feedback. Thank you!";
+        }else{
+            document.getElementById('responseHead').innerHTML = "Message";
+            document.getElementById('responseBody').innerHTML = "There was a problem submitting your feedback!";
+        }
+        
+
+        console.log(data.message);
+
+        
+
     }).catch(function (error) {
     console.warn(error);
         alert(error.message)
