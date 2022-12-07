@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:delivery_note_number",
+ "creation": "2022-12-07 13:38:04.121690",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "delivery_note_number",
+  "customer",
+  "customer_contact_name",
+  "customer_contact_email",
+  "was_the_goods_orand_services_delivered",
+  "data_2",
+  "general_service_delivery",
+  "timelines_of_service_delivery",
+  "personnel_technical_effectiveness",
+  "personnel_communication_skill",
+  "more_details_section",
+  "what_did_we_do_well",
+  "what_could_we_improve",
+  "column_break_14",
+  "please_state_any_additional_supportservice_required"
+ ],
+ "fields": [
+  {
+   "fieldname": "delivery_note_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Delivery Note Number",
+   "options": "Delivery Note",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_contact_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Customer Contact Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_contact_email",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": "Customer Contact Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "was_the_goods_orand_services_delivered",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Was the goods or/and services delivered",
+   "options": "Yes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "general_service_delivery",
+   "fieldtype": "Select",
+   "label": "General service delivery",
+   "options": "1\n2\n3\n4\n5",
+   "reqd": 1
+  },
+  {
+   "fieldname": "timelines_of_service_delivery",
+   "fieldtype": "Select",
+   "label": "Timelines of service delivery",
+   "options": "1\n2\n3\n4\n5",
+   "reqd": 1
+  },
+  {
+   "fieldname": "personnel_technical_effectiveness",
+   "fieldtype": "Select",
+   "label": "Personnel technical effectiveness",
+   "options": "1\n2\n3\n4\n5",
+   "reqd": 1
+  },
+  {
+   "fieldname": "personnel_communication_skill",
+   "fieldtype": "Select",
+   "label": "Personnel communication skill",
+   "options": "1\n2\n3\n4\n5",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "what_did_we_do_well",
+   "fieldtype": "Small Text",
+   "label": "What did we do well?"
+  },
+  {
+   "fieldname": "what_could_we_improve",
+   "fieldtype": "Small Text",
+   "label": "What could we improve?"
+  },
+  {
+   "fieldname": "please_state_any_additional_supportservice_required",
+   "fieldtype": "Small Text",
+   "label": "Please state any additional support/service required?"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "more_details_section",
+   "fieldtype": "Section Break",
+   "label": "More Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-07 13:46:08.638093",
+ "modified_by": "Administrator",
+ "module": "Customer Feedback",
+ "name": "Delivery Customer Feedback",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
