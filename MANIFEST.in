@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include customer_feedback *.css
+recursive-include customer_feedback *.csv
+recursive-include customer_feedback *.html
+recursive-include customer_feedback *.ico
+recursive-include customer_feedback *.js
+recursive-include customer_feedback *.json
+recursive-include customer_feedback *.md
+recursive-include customer_feedback *.png
+recursive-include customer_feedback *.py
+recursive-include customer_feedback *.svg
+recursive-include customer_feedback *.txt
+recursive-exclude customer_feedback *.pyc
