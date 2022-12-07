@@ -29,7 +29,7 @@ def get_customer_feedback(**kwargs):
         feedback.insert(ignore_permissions=True)
         frappe.db.commit()
         
-        response = "Your feedback has been received! Thank you."
+        response = "Success"
 
     except Exception as e:
         response = str(e)
